@@ -1,0 +1,22 @@
+enter the user name and email:
+$ git config --global user.name "-----"
+$ git config --gloabl user.email "-----"
+
+--> show all configuration      git config --list
+--> show config name              git config user.name
+--> show config email              git config user.email
+create porject :
+-->list all commands                 git
+--> create repo [git]                  git init
+--> track changes                      git add (file name)
+--> check status                         git status 
+--> backup                                  git commit -m (message)
+--> show history                         git log
+--> Upload to Github                git push
+--> Download from GitHub     git pull  
+--> clean the screen                   clear
+--> create file                              touch (file name)
+--> roll back to hash                   git checkout (Hash_Code)
+--> show all the branchs            git branch
+--> return to 'master' timeline  git checkout master
+
