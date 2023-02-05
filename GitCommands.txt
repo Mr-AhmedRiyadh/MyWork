@@ -18,3 +18,5 @@ create porject :
 --> create file                              touch (file name)
 --> roll back to hash                   git checkout (Hash_Code)
 --> show all the branchs            git branch
+--> return to 'master' timeline  git checkout master
+
